@@ -1,0 +1,6 @@
+[submodule "src/armmy_simulation/armmy_diffdrive_controller"]
+	path = src/armmy_simulation/armmy_diffdrive_controller
+	url = git@github.com:Armmy2530/ros2-diffdrive-controller.git
+[submodule "src/armmy_simulation/armmy_turtlebot3"]
+	path = src/armmy_simulation/armmy_turtlebot3
+	url = git@github.com:Armmy2530/turtlebot3-gz.git
