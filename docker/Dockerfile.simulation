@@ -1,5 +1,5 @@
 ARG ROS_DISTRO=humble
-FROM ros:humble-desktop
+FROM osrf/ros:humble-desktop
 
 USER root
 
@@ -24,9 +24,9 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     ros-dev-tools \
     ros-${ROS_DISTRO}-teleop-twist-keyboard \
-    ros-${ROS_DISTRO}-rmw-cyclonedds-cpp
+    ros-${ROS_DISTRO}-rmw-cyclonedds-cpp \
     libgl1-mesa-dev \
-    libosmesa6-dev \
+    libosmesa6-dev 
 
 # RUN rosdep init 
 RUN rosdep update --rosdistro $ROS_DISTRO && \

@@ -26,7 +26,7 @@ services:
     ipc: host
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
-      - ./src:/ros2_ws/src
+      # - ../src/armmy_simulation :/ros2_ws/src
       # - ./docker_ws:/ros_ws/src
     # command: tail -f /dev/null
     command: >
